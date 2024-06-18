@@ -1,0 +1,44 @@
+﻿<Window x:Class="LibraryManagementSystem.IssueBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Issue Book" Height="400" Width="500">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Issue Book" FontSize="20" Margin="10" HorizontalAlignment="Center"/>
+
+            <!-- Grid to place TextBlock and TextBox in the same line -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- TextBlock for Book Title -->
+                <TextBlock Text="Book Title" Margin="10" Width="80" VerticalAlignment="Center"/>
+
+                <!-- TextBox for Book Title -->
+                <TextBox Name="BookTitleTextBox" Grid.Column="1" Margin="10" />
+            </Grid>
+
+            <!-- Grid to place TextBlock and TextBox in the same line -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- TextBlock for Member Name -->
+                <TextBlock Text="Member Name" Margin="10" Width="80" VerticalAlignment="Center"/>
+
+                <!-- TextBox for Member Name -->
+                <TextBox Name="MemberNameTextBox" Grid.Column="1" Margin="10" />
+            </Grid>
+
+            <!-- DatePicker for Issue Date -->
+            <DatePicker Name="IssueDatePicker" Margin="10" />
+
+            <!-- Button to Issue Book -->
+            <Button Content="Issue" Margin="10" Click="IssueButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

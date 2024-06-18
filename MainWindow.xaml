@@ -1,0 +1,24 @@
+﻿<Window x:Class="LibraryManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Library Management System" Height="540" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="60" VerticalAlignment="Top">
+            <TextBlock Text="Library Management System" FontSize="24" VerticalAlignment="Center" Margin="10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="20">
+            <Button Content="Add Book" Width="200" Height="50" Margin="10" Click="AddBook_Click"/>
+            <Button Content="Search Books" Width="200" Height="50" Margin="10" Click="SearchBooks_Click"/>
+            <Button Content="Manage Members" Width="200" Height="50" Margin="10" Click="ManageMembers_Click"/>
+            <Button Content="Issue Book" Width="200" Height="50" Margin="10" Click="IssueBook_Click"/>
+            <Button Content="View Issued Books" Width="200" Height="50" Margin="10" Click="ViewIssuedBooks_Click"/>
+            <Button Content="Return Book" Width="200" Height="50" Margin="10" Click="ReturnBookButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

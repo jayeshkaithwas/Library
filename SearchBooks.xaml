@@ -1,0 +1,33 @@
+﻿<Window x:Class="LibraryManagementSystem.SearchBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Search Books" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="60" VerticalAlignment="Top">
+            <TextBlock Text="Search Books" FontSize="24" VerticalAlignment="Center" Margin="10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="20">
+            <!-- Search bar -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock TextWrapping="Wrap" Text="Enter book title or author" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="104,10,504,0"/>
+                <TextBox x:Name="SearchTextBox" Grid.Column="1" Margin="265,10,106,18" />
+            </Grid>
+
+            <Button Content="Search" Width="200" Height="30" Margin="10" Click="SearchButton_Click"/>
+
+            <!-- List of search results -->
+            <ListBox x:Name="SearchResultsListBox" Width="600" Height="201" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
