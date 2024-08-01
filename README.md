@@ -15,15 +15,13 @@ Welcome to the Library Management System repository! This project is a comprehen
 
 ## Overview
 
-The Library Management System is designed to help libraries manage their collections of books, members, and transactions efficiently. It provides functionalities for cataloging books, managing member information, tracking book loans and returns, and generating various reports.
+The Library Management System is designed to help libraries manage their collections of books, members, and transactions efficiently.
 
 ## Features
 
 - **Book Management**: Add, update, and remove books from the library catalog.
 - **Member Management**: Register new members, update member information, and manage membership status.
-- **Loan Management**: Issue and return books, track due dates, and calculate fines.
 - **Search Functionality**: Search for books and members using various criteria.
-- **Reports**: Generate reports on book loans, returns, overdue books, and member activity.
 
 ## Technologies Used
 
